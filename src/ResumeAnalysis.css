@@ -1,0 +1,182 @@
+/* resume_analysis.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Analysis Result Card */
+.analysis-result-card {
+    margin-top: 2rem;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+    animation: slideUp 0.5s ease-out;
+    /* This is the key change: Set a max-height and make the content scroll internally */
+    max-height: 40vh; 
+    overflow-y: auto; 
+}
+
+/* Rest of the resume_analysis.css code remains the same */
+.resume-analysis-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.resume-analysis-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1c2b4c;
+    margin-bottom: 0.5rem;
+}
+
+.resume-analysis-subtitle {
+    font-size: 1rem;
+    color: #667788;
+    margin-bottom: 2rem;
+}
+
+.upload-section {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.file-upload-label {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.upload-box {
+    border: 2px dashed #9ca3af;
+    border-radius: 10px;
+    padding: 3rem 1.5rem;
+    background-color: #f9fafb;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+    border-color: #3b82f6;
+    background-color: #eff6ff;
+}
+
+.upload-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #4b5563;
+    margin: 0;
+}
+
+.upload-subtext {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
+
+#file-input {
+    display: none;
+}
+
+.file-info-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #e0e7ff;
+    border: 1px solid #c7d2fe;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.file-name {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #374151;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.error-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.error-text {
+    font-size: 1rem;
+    color: #dc2626;
+    margin: 0;
+}
+
+.analyze-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.analyze-btn:disabled {
+    background-color: #93c5fd;
+    cursor: not-allowed;
+}
+
+.analyze-btn:not(:disabled):hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.result-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1c2b4c;
+    margin-bottom: 1rem;
+}
+
+.result-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4b5563;
+    white-space: pre-wrap;
+}
+
+.result-content ul, .result-content ol {
+    margin-top: 0.5rem;
+    padding-left: 20px;
+}

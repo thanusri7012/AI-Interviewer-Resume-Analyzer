@@ -1,0 +1,140 @@
+/* AuthForm.css */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Main container with a soft gradient background inspired by the frame */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a7e3d9, #fdd0cf); /* Light teal to light pink gradient */
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Card for the form - Keeping the white background */
+.auth-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.auth-card:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles and subtitles - Keeping the teal/greenish color */
+.card-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #00796b; /* Dark Teal */
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    color: #4a4a4a;
+}
+
+/* Form inputs - Keeping the styling */
+.input-field {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #c0e0e0;
+    border-radius: 8px;
+    background-color: #f7ffff;
+    color: #333;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+    color: #999;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #00bcd4; /* Cyan */
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.2);
+}
+
+/* Submit button - Keeping the gradient style */
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #a78bfa, #f472b6); /* Purple to pink gradient */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    background: linear-gradient(90deg, #8661de, #e754a3); /* Darker shades on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(167, 139, 250, 0.4);
+}
+
+/* Error message - Keeping the styling */
+.error-message {
+    color: #d32f2f; /* Red */
+    font-size: 0.9rem;
+    margin: -1rem 0 1.5rem;
+    text-align: center;
+    background-color: #ffebee;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ef9a9a;
+}
+
+/* Toggle link for sign-up/log-in - Keeping the teal color */
+.auth-toggle {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.toggle-link {
+    color: #00796b; /* Dark Teal */
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.toggle-link:hover {
+    text-decoration: underline;
+    color: #004d40;
+}
+
+/* Logout button - Keeping the styling */
+.logout-button {
+    width: 100%;
+    padding: 12px;
+    background: none;
+    color: #777;
+    border: 1px solid #c0e0e0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #f0f8ff;
+    border-color: #00bcd4;
+    color: #00796b;
+}
